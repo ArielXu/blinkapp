@@ -1,16 +1,19 @@
 <template>
   <div class="hello">
-    <h1>-----:::{{ msg }}</h1>
+  <el-button @click="visible = true">Button</el-button>
+    <h1>-----user:::{{ msg }}</h1>
 
   </div>
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+export default  {
+  name: 'USER',
+  data  : function() {
+    return {
+      msg: "user name: hu"
+    }
+  },
 }
 </script>
 
